@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>DOM</title>
+    <style>
+      body {
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="showMessage()">hello</button>
+    <p id="p1"></p>
+    <button onclick="removeMessage()">❌</button>
+
+    <script>
+      let p = document.getElementById("p1");
+      function showMessage() {
+        p.innerHTML = "Hello there";
+      }
+
+      function removeMessage() {
+        p.innerHTML = "";
+      }
+    </script>
+  </body>
+</html>

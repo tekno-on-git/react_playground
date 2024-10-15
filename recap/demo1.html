@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkboxes</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Registration Form</h2>
+    <form action="#">
+      <table>
+        <tr>
+          <td class="tdLabel">
+            <label for="register_name" class="label"> Enter Name: </label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="name"
+              id="register_name"
+              style="width: 160px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="tdLabel">
+            <label for="register_gender" class="label"> Email: </label>
+          </td>
+          <td>
+            <input type="email" name="email" id="register_email" />
+          </td>
+        </tr>
+
+        <tr>
+          <td class="tdLabel">
+            <label for="register_password" class="label">
+              Enter Password:
+            </label>
+          </td>
+          <td>
+            <input
+              type="password"
+              name="password"
+              id="register_password"
+              style="width: 160px"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td class="tdLabel">
+            <label for="register_gender" class="label"> Select gender: </label>
+          </td>
+          <td>
+            <input
+              type="radio"
+              name="gender"
+              id="register_gender_male"
+              value="male"
+            />
+            <label for="register_gender_male">Male</label>
+            <input
+              type="radio"
+              name="gender"
+              id="register_gender_female"
+              value="female"
+            />
+            <label for="register_gender_female">Female</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="tdLabel">
+            <label for="register_country" class="label">
+              Select Country:
+            </label>
+          </td>
+          <td>
+            <select name="register_country" id="register_country">
+              <option value="india">India</option>
+              <option value="south_africa">South Africa</option>
+              <option value="usa">USA</option>
+              <option value="nepal">Nepal</option>
+              <option value="china">China</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div align="right">
+              <input type="submit" value="register" id="register_0" />
+            </div>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Registration Form</h2>
+    <form action="#">
+      <fieldset>
+        <legend>User personal information</legend>
+        <label> Full name: </label>
+        <br />
+        <input type="text" name="name" />
+        <br />
+        <label> Email </label>
+        <br />
+        <input type="email" name="email" />
+        <br />
+        <label> Password: </label>
+        <br />
+        <input type="password" name="pass" />
+        <br />
+        <label> Password: </label>
+        <br />
+        <input type="password" name="pass" />
+        <br />
+        <label> Gender: </label>
+        <br />
+        <input type="radio" name="gender" id="gender" value="male" /> Male
+        <input type="radio" name="gender" id="gender" value="female" /> Female
+        <input type="radio" name="gender" id="gender" value="other" /> Other
+        <br />
+        Address: <br />
+        <textarea name="address"> </textarea>
+        <br />
+        <input type="submit" value="sign-up" />
+      </fieldset>
+    </form>
+  </body>
+</html>

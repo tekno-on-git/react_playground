@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>TEst2</title>
+    <style>
+      .first {
+        background-color: red;
+        position: absolute;
+        width: 300px;
+        height: 250px;
+
+        /*Centering the div with absolute position*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30;
+        /* color: white; */
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="first"
+      onmouseenter="showText(this)"
+      onmouseleave="removeText(this)"
+    ></div>
+    <script>
+      function showText(element) {
+        element.innerHTML = "Hello World";
+        element.style.backgroundColor = "yellow";
+      }
+      function removeText(element) {
+        element.innerHTML = "";
+        element.style.backgroundColor = "red";
+      }
+    </script>
+  </body>
+</html>
