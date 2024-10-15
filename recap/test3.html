@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Hello</title>
+    <script>
+      function fun1(x) {
+        x.style.backgroundColor = "red";
+      }
+
+      function fun2(x) {
+        x.style.backgroundColor = "green";
+      }
+    </script>
+  </head>
+  <body>
+    <form action="#">
+      Name:
+      <input type="text" onfocus="fun1(this)" />
+      <br />
+      Password:
+      <input type="password" onfocus="fun2(this)" />
+    </form>
+  </body>
+</html>
