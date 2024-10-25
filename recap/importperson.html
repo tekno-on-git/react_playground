@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>imp person</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script type="module">
+      import { name, age, auth } from "./person.js";
+      document.getElementById("demo").innerHTML = "My name is " + name;
+      document.getElementById("demo").innerHTML += " <br> I am " + age + "yo";
+    </script>
+  </body>
+</html>
