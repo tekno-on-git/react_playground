@@ -2,8 +2,15 @@ import React, { useState } from "react";
 
 const MyForm = () => {
   const [name, setName] = useState("");
+  console.log(name);
   return (
-    <form>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        setName("");
+        alert(`The name is ${name}`);
+      }}
+    >
       <label>
         Enter Your Name:{" "}
         <input
@@ -11,14 +18,7 @@ const MyForm = () => {
           onChange={(e) => setName(e.target.value)}
           value={name}
         />
-        <button
-          onClick={(e) => {
-            e.preventDefault();
-            alert(`The name is ${name}`);
-          }}
-        >
-          Submit
-        </button>
+        <input type="submit" />
       </label>
     </form>
   );
